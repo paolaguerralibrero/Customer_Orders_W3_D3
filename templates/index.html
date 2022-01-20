@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>{{title}} - Customer Orders</title>
+</head>
+<body>
+    <h1>Customer Orders</h1>
+    {% for orders in customerOrders %}
+        <div>
+            <p>
+                {{orders.customer_name}}: <b>{{orders.order_date}}</b>, <b>{{orders.book_title}}</b>, <b>{{orders.quantity}}</b>
+            </p>
+        </div>
+    {% endfor %}
+</body>
+</html>
